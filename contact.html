@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gürcan Galeri</title>
+    <link rel="icon" href="./images/1.png">
+    <link href="main.css" rel="stylesheet">
+    <link href="contact.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/1.png" alt="logo">
+            <p>GÜRCAN GALERİ</p>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li id="araclar"><a class="nav-link" href="main.html" >Araçlarımız</a>
+                    <ul class="araclar-dropdown">
+                        <li><a class="dr-link" href="main.html#audi">Audi</a></li>
+                        <li><a class="dr-link" href="main.html#mercedes">Mercedes</a></li>
+                        <li><a class="dr-link" href="main.html#jeep">Jeep</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-link" href="#">Hizmetlerimiz</a></li>
+                <li><a class="nav-link" href="contact.html">İletişim</a></li>
+            </ul>
+        </nav>
+        <div class="card">
+            <ul class="navbar-mobile">                
+                <li id="hamburger-menu">
+                    <a class="hamburger" href="#">
+                        <img src="./images/hamburger.svg" alt="hamburger-menu">
+                    </a>
+                    <ul class="navbar-mini-dropdown">
+                        <li><a class="mini-dr-link" href="main.html">Araçlarımız</a></li>
+                        <li><a class="mini-dr-link" href="#">Hizmetlerimiz</a></li>
+                        <li><a class="mini-dr-link" href="contact.html">İletişim</a></li> 
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container" title="container">
+        <div class="row" title="row">
+            <div class="col-12" title="col-12">
+                <form action="./forms/form.text" target="_blank">
+                    <h1>Dilek, istek ve şikayetlerinizi aşağıdaki formu doldurarak iletebilirsiniz.</h1><br>
+                    <h2>Başvuru tipini seçiniz.</h2>
+                    <input type="radio" id="dilek" name="apply-type" value="dilek">
+                    <label for="dilek">Dilek</label><br>
+                    <input type="radio" name="apply-type" id="istek" value="istek">
+                    <label for="dilek">İstek</label><br>
+                    <input type="radio" name="apply-type" id="şikayet" value="şikayet">
+                    <label for="dilek">Şikayet</label><br><br>
+                    <h2>Talebinize konu aracı seçiniz.</h2>
+                    <label for="talep-konu">Araçlar: </label>
+                    <select name="araclar" id="talep-konu">
+                        <option value="audi-a4">Audi A4</option>
+                        <option value="mercedes-amg" selected>Mercedes AMG</option>
+                        <option value="jeep-x">Jeep X</option>
+                    </select><br><br>
+                    <h2>Formu doldurunuz.</h2>
+                    <label for="fname">İsim:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Nurullah"><br>
+                    <label for="fsurname">Soyisim:</label><br>
+                    <input type="text" id="fsurname" name="fsurname" placeholder="Gürcan"><br>
+                    <label for="ftext">Metin:</label><br>
+                    <textarea name="ftext" id="ftext"  placeholder="Metin giriniz."></textarea><br>
+                    <h2>Kullanıcı sözleşmesini onaylayınız.</h2>
+                    <input type="checkbox" id="sozlesme" name="sozlesme-onay" value="sozlesme">
+                    <label for="sozlesme">6663 sayılı kişisel verilerin korunması kanunu kapsamında kullanıcı bilgilerimin paylaşılmasına rıza gösteriyorum.</label><br><br>
+                    <input type="button" value="Giriş Yap" onclick="giris()">
+                    <input type="submit" value="Gonder">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copy right 2020 by Nurullah Gürcan</p>
+    </footer>
+
+</body>
+</html>

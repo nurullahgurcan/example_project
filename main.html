@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gürcan Galeri</title>
+    <link rel="icon" href="./images/1_icon.png">
+    <link href="main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/1.png" alt="logo">
+            <p>GÜRCAN GALERİ</p>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li id="araclar"><a class="nav-link" href="main.html" >Araçlarımız</a>
+                    <ul class="araclar-dropdown">
+                        <li><a class="dr-link" href="#audi">Audi</a></li>
+                        <li><a class="dr-link" href="#mercedes">Mercedes</a></li>
+                        <li><a class="dr-link" href="#jeep">Jeep</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-link" href="#">Hizmetlerimiz</a></li>
+                <li><a class="nav-link" href="contact.html">İletişim</a></li>
+            </ul>
+        </nav>
+        <div class="card">
+            <ul class="navbar-mobile">                
+                <li id="hamburger-menu">
+                    <a class="hamburger" href="#">
+                        <img src="./images/hamburger.svg" alt="hamburger-menu">
+                    </a>
+                    <ul class="navbar-mini-dropdown">
+                        <li><a class="mini-dr-link" href="main.html">Araçlarımız</a></li>
+                        <li><a class="mini-dr-link" href="#">Hizmetlerimiz</a></li>
+                        <li><a class="mini-dr-link" href="contact.html">İletişim</a></li> 
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container" title="container">
+        <div class="row" title="row" id="audi">
+            <div class="col-6" title="col-6">
+                <div class="metin" title ="metin">
+                    <h1>Audi A4</h1>
+                    <h2>1.8 TFSi</h2>
+                    <h4>Otomatik Vites</h4>
+                    <h4>Elektronik el freni</h4>
+                    <h4>Katlanır ayna</h4>
+                    <h4>Geri görüş kamerası, park sensörü, ısıtmalı koltuklar</h4>
+                    <button class="button-view-more" id="mybutton" onclick="view_more()">Daha fazla gör</button>
+                </div>
+            </div>
+            <div class="col-6" title ="col-6">
+                <img class="araba-resim" src="./images/2.png" alt=audi>
+            </div>
+        </div>
+        <div class="row" title="row" id="mercedes">
+            <div class="col-6" title="col-6">
+                <div class="metin" title ="metin">
+                    <h1>Mercedes AMG</h1>
+                    <h2>1.8 Dizel</h2>
+                    <h4>Manuel Vites</h4>
+                    <h4>Park sensörü</h4>
+                    <h4>Deri elektrikli koltuk</h4>
+                    <h4>Geri görüş kamerası</h4>
+                    <button class="button-view-more" onclick="view_more()">Daha fazla gör</button>
+                </div>
+            </div>
+            <div class="col-6" title ="col-6">
+                <img class="araba-resim" src="./images/3.png" alt=mercedes>
+            </div>
+        </div>
+        <div class="row" title="row" id="jeep">
+            <div class="col-6" title="col-6">
+                <div class="metin" title ="metin">
+                    <h1>Jeep</h1>
+                    <h2>1.8 Dizel</h2>
+                    <h4>Manuel Vites</h4>
+                    <h4>Park sensörü</h4>
+                    <h4>Deri elektrikli koltuk</h4>
+                    <h4>Geri görüş kamerası</h4>
+                    <button class="button-view-more" onclick="view_more()">Daha fazla gör</button>
+                </div>
+            </div>
+            <div class="col-6" title ="col-6">
+                <img class="araba-resim" src="./images/4.png" alt=jeep>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copy right 2020 by Nurullah Gürcan</p>
+    </footer>
+
+    <div class="modal" id=mymodal>
+        <div class="modal-content">
+            <div class="model-header">
+                <span class="close" >&times</span>
+                <h2>Audi A4</h2>
+            </div>
+            <div class="model-body">
+                <table>
+                    <tr>
+                        <th>Araç tipi</th>
+                        <td>Binek araç / D segment</td>
+                    </tr>
+                    <tr>
+                        <th>Kasa tipi / Kapı sayısı</th>
+                        <td>Sedan / 4 kapı</td>
+                    </tr>
+                    <tr>
+                        <th>Motor tipi</th>
+                        <td>Dizel / 4 silindir</td>
+                    </tr>
+                    <tr>
+                        <th>Üretim yılı (ilk/son)</th>
+                        <td>2015/2019</td>
+                    </tr>
+                    <tr>
+                        <th>Yakıt tüketimi (şehir içi / şehir dışı)</th>
+                        <td>5.1 lt / 4 lt</td>
+                    </tr>
+                    <tr>
+                        <th>Motor gücü</th>
+                        <td>190 hp</td>
+                    </tr>
+                    <tr>
+                        <th>Hızlanma 0-100 km/s</th>
+                        <td>7.2 saniye</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
